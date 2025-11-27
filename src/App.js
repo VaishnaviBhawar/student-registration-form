@@ -4,14 +4,14 @@ import Success from "./Success";
 import "./App.css";
 
 function App() {
-  const [submittedData, setSubmittedData] = useState(null); // null initially
+  const [submittedData, setSubmittedData] = useState(null); 
 
   const handleSuccess = (data) => {
-    setSubmittedData(data); // save form data
+    setSubmittedData(data); 
   };
 
   const handleReset = () => {
-    setSubmittedData(null); // reset to show form again
+    setSubmittedData(null); 
   };
 
   return (

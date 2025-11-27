@@ -1,12 +1,10 @@
-/* General body styles */
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f0f2f5;
 }
-
-/* Header styles */
 .header {
   background: linear-gradient(90deg, #4CAF50, #45a049);
   color: white;
@@ -19,8 +17,6 @@ body {
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   animation: slideDown 1s ease;
 }
-
-/* Footer styles */
 .footer {
   background: linear-gradient(90deg, #4CAF50, #45a049);
   color: white;
@@ -32,19 +28,15 @@ body {
   animation: floatUp 2s infinite alternate;
 }
 
-/* Floating animation for footer */
 @keyframes floatUp {
   0% { transform: translateY(0px); }
   100% { transform: translateY(-10px); }
 }
 
-/* Slide-down animation for header */
 @keyframes slideDown {
   from { transform: translateY(-50px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
 }
-
-/* Form container */
 .container {
   max-width: 700px;
   margin: 50px auto;
@@ -55,7 +47,6 @@ body {
   text-align: center;
 }
 
-/* Headings */
 h2 {
   font-size: 28px;
   margin-bottom: 10px;
@@ -67,7 +58,6 @@ p {
   margin-bottom: 25px;
 }
 
-/* Inputs & select */
 .inputField, .selectField {
   width: 100%;
   padding: 15px;
@@ -83,7 +73,6 @@ p {
   outline: none;
 }
 
-/* Radio & Checkbox */
 .radioGroup {
   display: flex;
   justify-content: center;
