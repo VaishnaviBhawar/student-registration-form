@@ -1,0 +1,140 @@
+/* General body styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+}
+
+/* Header styles */
+.header {
+  background: linear-gradient(90deg, #4CAF50, #45a049);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  animation: slideDown 1s ease;
+}
+
+/* Footer styles */
+.footer {
+  background: linear-gradient(90deg, #4CAF50, #45a049);
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  position: relative;
+  margin-top: 30px;
+  font-size: 16px;
+  animation: floatUp 2s infinite alternate;
+}
+
+/* Floating animation for footer */
+@keyframes floatUp {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-10px); }
+}
+
+/* Slide-down animation for header */
+@keyframes slideDown {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Form container */
+.container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px 40px;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #f5f7fa, #e4e8f0);
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Headings */
+h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+}
+p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+/* Inputs & select */
+.inputField, .selectField {
+  width: 100%;
+  padding: 15px;
+  margin: 12px 0;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.inputField:focus, .selectField:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 8px rgba(76,175,80,0.3);
+  outline: none;
+}
+
+/* Radio & Checkbox */
+.radioGroup {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 12px 0;
+  font-size: 16px;
+}
+.checkboxGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+/* Buttons */
+.button {
+  padding: 15px 30px;
+  margin-top: 15px;
+  border-radius: 50px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.submitButton {
+  background-color: #4CAF50;
+  color: white;
+}
+.submitButton:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+.resetButton {
+  background-color: #f44336;
+  color: white;
+  margin-left: 15px;
+}
+.resetButton:hover {
+  background-color: #e53935;
+  transform: scale(1.05);
+}
+
+/* Success page */
+.successMessage {
+  color: #4CAF50;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.successText {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 25px;
+}
